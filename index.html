@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CALCULATOR APP - Javascript, Html, Css calculator</title>
+  <script type="text/javascript" src="calculator.js" defer></script>
+  <link rel="stylesheet" href="calculatorApp.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+  </style>
+</head>
+<body>
+<!--
+___________
+|[=======]|
+| 7 8 9 / |
+| 4 5 6 * |
+| 1 2 3 - |
+| . 0 = + |
+|_________|
+  
+-->
+  <div id="container">
+    <div id="calculatorMain">
+      <div class="calc-top">
+        <div><br /></div>
+        <div class="screen">
+          <p id="display">0</p>
+        </div>
+        <div><br /></div>
+      </div>
+      <div class="numbers">
+        <div class="number-row">
+          <button class="top" id="cButton">C</button>
+          <button class="top" id="backspace">&gt;</button>
+        </div>
+        <div class="number-row">
+          <button class="number" value="7">7</button>
+          <button class="number" value="8">8</button>
+          <button class="number" value="9">9</button>
+          <button class="operator" value="÷">÷</button>
+        </div>
+        <div class="number-row">
+          <button class="number" value="4">4</button>
+          <button class="number" value="5">5</button>
+          <button class="number" value="6">6</button>
+          <button class="operator" value="x">x</button>
+        </div>
+        <div class="number-row">
+          <button class="number" value="1">1</button>
+          <button class="number" value="2">2</button>
+          <button class="number" value="3">3</button>
+          <button class="operator" value="-">-</button>
+        </div>
+        <div class="number-row">
+          <button id="decButton">.</button>
+          <button class="number" value="0">0</button>
+          <button id="equalsButton">=</button>
+          <button class="operator" value="+">+</button>
+        </div>
+        <div class="filler">
+          <br />
+        </div>
+      </div>
+    </div>
+    <p class="copy"><i>&copy; 2023 Jeremy St Pierre</i></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+  margin: auto;
+}
+/*calculator colors:
+Screen: #7CDECB
+numbers: #7AC6CB
+buttons: #ADD8C7
+body: #CBDBE0
+borders/hilights: #DDF3F5
+*//*
+___________
+|[=======]|
+| 7 8 9 / |
+| 4 5 6 * |
+| 1 2 3 - |
+| . 0 = + |
+|_________|
+
+*/
+#container {
+ display: flex;
+ flex-direction: column;
+}
+#calculatorMain {
+  margin: 0px auto;
+  width: 400px;
+  height: 560px;
+  background-color: #CBDBE0;
+  border-radius: 25px;
+  box-shadow: -20px 15px 0 0 #7AC6CB;
+  display: flex;
+  flex-direction:column;
+}
+.calc-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.screen {
+  display: flex;
+  height: 80px;
+  width: 360px;
+  background-color: #7CDECB;
+  color:#7AC6CB;
+  border-radius: 10px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 46px;
+  justify-content:flex-end;
+}
+#display {
+  margin: 10px;
+}
+.numbers {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.number-row {
+  display:flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+}
+
+button {
+  background-color: #DDF3F5;
+  border-radius: 50%;
+  box-shadow: -5px 5px 0 0 #ADD8C7;
+  width: 80px;
+  height: 80px;
+  border:none;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 32px;
+}
+button:hover{
+  background-color: #CBDBE0;
+}
+button:active {
+  /*margin-top: 2px;
+  margin-right: 2px; */
+  box-shadow: -3px 3px 0 0 #ADD8C7;
+}
+button .top {
+  width:160px;
+}
+
+.copy {
+  text-align: center;
+}
